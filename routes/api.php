@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\API\Category\ItemListPerCategoryController;
+use App\Http\Controllers\API\CategoryController;
 use App\Http\Controllers\API\ProductController;
 use App\Http\Controllers\API\RegisterController;
 use Illuminate\Http\Request;
@@ -25,4 +27,6 @@ Route::post('login',[RegisterController::class,'login']);
 
 Route::middleware('auth:api')->group(function () {
     Route::resource('products', ProductController::class);
+    Route::resource('category', CategoryController::class);
+    Route::resource('categoryPerItem', ItemListPerCategoryController::class);
 });

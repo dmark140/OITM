@@ -16,6 +16,7 @@ class Product extends Model
      */
     protected $fillable =[
         'itemCode',
+        'cid',
         'itemName',
         'quantity',
         'min',

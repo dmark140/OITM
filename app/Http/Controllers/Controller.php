@@ -11,7 +11,7 @@ class Controller extends BaseController
 {
     use AuthorizesRequests, ValidatesRequests;
 
-    public function sendRes($result, $message =""){
+    public function sendRes($result, $message){
         $res = [
             'success' => true,
             'message'=> $message,
