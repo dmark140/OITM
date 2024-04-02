@@ -9,8 +9,8 @@
 
 
 ----->>
-installation process
-composer require laravel/passport
-php artisan passport:install
-php artisan passport:client --personal
+<p>installation process</p>
+<p>composer require laravel/passport</p>
+<p>php artisan passport:install</p>
+<p>php artisan passport:client --personal</p>
 
